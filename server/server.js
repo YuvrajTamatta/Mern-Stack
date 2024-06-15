@@ -12,4 +12,6 @@ connectDb().then(()=>{
     
 const PORT = 5000
 app.listen(PORT,()=>console.log(`Port running on : ${PORT}`))
+}).catch((err)=>{
+    console.log(err);
 })
